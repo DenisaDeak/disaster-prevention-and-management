@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.disasterpreventionmanagement">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@drawable/disaster"
+        android:label="Disaster prevention &amp; management"
+        android:roundIcon="@drawable/disaster"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DisasterPreventionApp">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB5WpK7eqWCisjFk19S1gxqrO6BkqbjRD0" />
+
+        <activity
+            android:name=".kids.Tutorial"
+            android:exported="false" />
+        <activity
+            android:name=".travel.WeatherTravelPlan"
+            android:exported="false" />
+        <activity
+            android:name=".kids.QuizKids"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegister"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".travel.DisastersPlan"
+            android:exported="false" />
+        <activity
+            android:name=".travel.TravelActivity"
+            android:exported="false" />
+        <activity android:name=".kids.KidsActivity" />
+        <activity android:name=".safetytips.SafetyTips" />
+        <activity android:name=".sharelocation.ShareLocationForm" />
+        <activity
+            android:name=".sharelocation.ShareLocation"
+            android:label="@string/title_activity_share_location" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

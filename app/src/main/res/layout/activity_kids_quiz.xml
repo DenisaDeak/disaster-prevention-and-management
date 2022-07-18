@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".kids.QuizKids"
+    android:background="@color/orange">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/back"></ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#4DFFFFFF"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/timer_quiz"
+            style="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="00:00"
+            android:textColor="@color/navy_blue"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/score_quiz"
+            style="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="score: 0"
+            android:textColor="@color/pink"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/question_number"
+            style="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/poppins"
+            android:text="question nr"
+            android:textColor="@color/pink"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Section"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:padding="15dp"
+            android:text="Question"
+            android:textSize="25dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <RadioButton
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/textview_border"
+                android:button="@null"
+                android:fontFamily="@font/poppins"
+                android:padding="20dp"
+                android:text="Answer A"
+                android:textAlignment="center"
+                android:textColor="#2E2E2E"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/textview_border"
+                android:button="@null"
+                android:fontFamily="@font/poppins"
+                android:padding="20dp"
+                android:text="Answer B"
+                android:textAlignment="center"
+                android:textColor="#2E2E2E"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/textview_border"
+                android:button="@null"
+                android:fontFamily="@font/poppins"
+                android:padding="20dp"
+                android:text="Answer C"
+                android:textAlignment="center"
+                android:textColor="#2E2E2E"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttondesign"
+            android:fontFamily="@font/poppins"
+            android:text="NEXT"
+            android:textColor="@color/blue_gray" />
+
+        <Button
+            android:id="@+id/skip_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttondesign"
+            android:fontFamily="@font/poppins"
+            android:text="SKIP QUESTION"
+            android:textColor="@color/blue_gray" />
+
+
+    </LinearLayout>
+</RelativeLayout>

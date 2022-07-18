@@ -1,0 +1,265 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Disaster prevention &amp; management</string>
+    <string name="title_activity_share_location">Map</string>
+
+    <string name="event1">Floods</string>
+    <string name="linkFloods">https://www.youtube.com/watch?v=rV1iqRD9EKY</string>
+    <string name="event1description">
+        Flooding is a temporary overflow of water onto land that is normally dry.\nFailing to evacuate flooded areas or entering flood waters can lead to injury or death.\nStanding floodwater can also spread infectious diseases, bring chemical hazards, and cause injuries.\n
+        \n
+        What to do:\n
+        - Avoid driving through flooded areas and standing water.\n
+        - Turn off all utilities at the main power switch and close the main gas valve.\n
+        - Do not drink flood water, or use it to wash dishes, brush teeth, or wash/prepare food. Drink clean, safe water.\n
+        - If evacuated, return to your home only if local authorities have said it is safe to do so.\n
+        - Never use any food and bottled water that comes/may have come into contact with floodwater.\n
+        - Listen to your local radio or television station for updates.\n
+        - Have immunization records handy (or know the year of your last tetanus shot).\n
+
+
+    </string>
+
+    <string name="event2">Tornadoes</string>
+    <string name="linkTornadoes">https://www.youtube.com/watch?v=Phx6pPJGURA</string>
+    <string name="event2description">Tornadoes are violently rotating columns of air that extend from a thunderstorm to the ground.\nTornadoes can destroy buildings and create deadly flying debris.\n
+        \n
+        What to do:\n
+        - Go to the basement or an inside room without windows on the lowest floor.\n
+        -Do not stay in a mobile home.\n
+        - Pay attention to local radio, or local alerting systems for current emergency information and instructions.\n
+        - Protect yourself by covering your head or neck with your arms and putting materials such as furniture and blankets around or on top of you.\n
+        - Do not try to outrun a tornado in a vehicle if you are in a car, find the nearest sturdy building instead.\n
+
+    </string>
+
+    <string name="event3">Earthquakes</string>
+    <string name="linkEarthquakes">https://www.youtube.com/watch?v=r5EbbrVXoQw</string>
+    <string name="event3description">An earthquake is a sudden, rapid shaking of the ground caused by the shifting of rocks deep underneath the earth’s surface.\nEarthquakes can cause fires, tsunamis, landslides or avalanches.\n
+        \n
+        What to do:\n
+        - DROP down onto your hands and knees.\n
+        - COVER your body underneath a sturdy table or desk.\n
+        - HOLD ON to your shelter (or to your head and neck) until the shaking stops.\n
+        - Do not run outside or to other rooms.\n
+        - Move away from windows and outside walls.\n
+        - Do not use the elevators.\n
+        - If you are outside, go to an open area away from trees, telephone poles, and buildings.
+
+    </string>
+
+    <string name="event4">Thunderstorms and lightning</string>
+    <string name="linkStorms">https://www.youtube.com/watch?v=60WJ8Vs6T7c</string>
+    <string name="event4description"> Lightning is a leading cause of injury and death from weather-related hazards.\nAlthough most lightning victims survive, people struck by lightning often report a variety of long-term, debilitating symptoms.\n
+        \n
+        What to do:\n
+        - Do NOT bathe, shower, wash dishes, or have any other contact with water during a thunderstorm because lightning can travel through a building’s plumbing.\n
+        - Move from outdoors into a building or car.\n
+        - Pay attention to alerts and warnings.\n
+        - Do not use anything connected to an electrical outlet.\n
+        - Stay away from windows and doors, and stay off porches.\n
+        - Do not use landline phones.\n
+        - Immediately get off elevated areas such as hills, mountain ridges, or peaks.\n
+        - Never shelter under an isolated tree. If you are in a forest, shelter near lower trees.\n
+        - Immediately get out of and away from ponds, lakes, and other bodies of water.
+    </string>
+
+    <string name="event5">Extreme heat</string>
+    <string name="linkHeatWave">https://www.youtube.com/watch?v=ter31IGeXzs</string>
+    <string name="event5description">Extreme heat is a period of high heat and humidity with temperatures above 32°C for at least two to three days.\nIn extreme heat your body works extra hard to maintain a normal temperature, which can lead to death.\n
+        \n
+        What to do:\n
+        - Never leave infants, children or pets in a parked car, even if the windows are cracked open.\n
+        - Wear sunscreen.\n
+        - Avoid Hot and Heavy Meals: They add heat to your body!\n
+        - Avoid strenuous activities.\n
+        - Wear light clothing.\n
+        - Use your stove and oven less to maintain a cooler temperature in your home.\n
+        - Check on family members and neighbors, especially high-risk categories\n
+        - Drink more fluids, regardless of how active you are. Don’t wait until you’re thirsty to drink.\n
+        - Watch for heat cramps, heat exhaustion and heat stroke.\n
+        - Never leave people or pets in a closed car.\n
+    </string>
+
+    <string name="event6">Winter storms</string>
+    <string name="linkIceStorms">https://www.youtube.com/watch?v=k9cvlPzMO3U</string>
+    <string name="event6description">Winter storms create a higher risk of car accidents, hypothermia, frostbite, carbon monoxide poisoning, and heart attacks from overexertion.\nWinter storms including blizzards can bring extreme cold, freezing rain, snow, ice and high winds.\n
+        \n
+        What to do:\n
+        - Stay off roads if at all possible. If trapped in your car, then stay inside.\n
+        - Stock up on food and water.\n
+        - Limit your time outside. If you need to go outside, then wear layers of warm clothing.\n
+        - Reduce the risk of a heart attack by avoiding overexertion when shoveling snow and walking in the snow.\n
+        - Prepare for possible power outages.\n
+        - Clear snow from around vehicle exhaust pipes before starting the vehicle to avoid carbon monoxide poisoning.\n
+
+    </string>
+
+    <string name="event7">Wildfires</string>
+    <string name="linkWildfires">https://www.youtube.com/watch?v=ypbPzX5eQss</string>
+    <string name="event7description">When wildfires create smoky conditions it’s important for everyone to reduce their exposure to smoke. Wildfire smoke irritates your eyes, nose, throat, and lungs.\nIt can make it hard to breathe and make you cough or wheeze.\n
+        \n
+        What to do:\n
+        - Know your community’s evacuation plans.\n
+        - Gather emergency supplies, such as respirators.\n
+        - Choose a room you can close off from outside air.\n
+        - Avoid using candles, gas, propane, wood-burning stoves, fireplaces, or aerosol sprays and don’t fry or broil meat, smoke tobacco products, or vacuum.\n
+
+
+    </string>
+
+    <string name="event8">Hurricane</string>
+    <string name="linkHurricanes">https://www.youtube.com/watch?v=fuuSm2WzJZo</string>
+    <string name="event8description">Hurricane season starts on May 15 in the north Pacific and June 1 in the Atlantic and the Caribbean.\nIt ends on November 30. Before hurricane season each year, make sure you and your family are prepared by planning ahead.\n
+    \n
+        What to do:\n
+        - Write down emergency phone numbers and keep them on the refrigerator or near every phone in your house.\n
+        - Have an emergency food and water supply.\n
+        - Have emergency power sources such as flashlights (don’t forget extra batteries).\n
+        - Cover up windows and doors.\n
+        - Be ready to turn off your power if you see flooding.\n
+        - Listen to the radio or TV for updates on the hurricane.\n
+        - Stay away from windows—you could get hurt by pieces of broken glass or flying debris during a storm.
+
+
+    </string>
+
+    <string name="floodsK">Floods</string>
+    <string name="linkKidsFloods">https://www.youtube.com/watch?v=pi_nUPcQz_A</string>
+    <string name="event1descriptionK">
+        Floods can happen very suddenly.\nFlood water can be deeper than it looks and fast moving.\n
+        \n
+        Here\'s what to do:\n
+        - Do NOT play, step in, or go near it. It can carry you away! Glass, snakes, and nasty things can hide in flood water.\n
+        - Some of these things can make you very sick so don\'t drink it or put it in your mouth at all.\n
+        - Move to higher ground or if water is flooding your house, go upstairs and away from the rising water.\n</string>
+
+    <string name="tornadoesK">Tornadoes</string>
+    <string name="linkKidsTornadoes">https://www.youtube.com/watch?v=EpuDYZ_g0yg</string>
+    <string name="event2descriptionK">A tornado happens during some storms.\nIt is a cloud that looks like a tunnel and has strong, fast winds.\n
+        \n
+        With a tornado, the wind can blow 200 miles per hour or faster!\nThat\'s really fast and really dangerous, so here is what you should do:\n
+        - Go someplace that\'s safe from the wind and flying objects like a basement, a bathroom, beneath the stairs, or a closet.\n
+        - Go to a room near its center and stay away from windows or anything heavy.\n
+        - Ask your parents before a tornado hits to tell you where you should go.\n
+        - If you\'re outside, run to a building.\n
+        - If you can\'t make it to a building or your house, get down low and cover your head with your arms.\n
+        - Because a tornado can pick up a car, never hide inside one.\n
+
+    </string>
+
+    <string name="earthquakesK">Earthquakes</string>
+    <string name="linkKidsEarthquakes">https://www.youtube.com/watch?v=MllUVQM3KVk</string>
+    <string name="event3descriptionK">When the earth begins to suddenly shake, it\'s super scary.\nThe shaking can be so bad that things
+        sitting on shelves or hanging on walls may fall and break. Earthquakes that are really bad are strong enough to even make some
+        bridges and buildings fall! \n
+        \n
+        Here is what to do:\n
+        - Get down under something that\'s sturdy and strong like your desk at school or a table.\n
+        - Protect your neck and head with a pillow if one is nearby or use your arm.\n
+        - If you can\'t find a table, crouch down by a wall that\'s away from windows and objects.\n
+        - If you\'re outside, stay away from trees or anything that might fall over and hurt you.\n
+    </string>
+
+    <string name="lightningK">Thunderstorms and lightning</string>
+    <string name="linkKidsLightning">https://www.youtube.com/watch?v=I_b1NLoY1mo</string>
+    <string name="event4descriptionK"> All thunderstorms produce lightning and are dangerous. If you hear the sound of thunder, then you are in danger from lightning.\n
+        \n
+        Rules for dealing with a thunderstorm:\n
+        - Avoid water. It’s a great conductor of electricity, so do not take a shower, wash your hands, wash dishes or do laundry.\n
+        - Do not use a corded telephone or a computer\n
+        - Stay away from windows and doors, and stay off porches\n
+        - If you see someone struck by a lightning, call the emergency number immediately!\n
+    </string>
+
+    <string name="heatK">Extreme heat</string>
+    <string name="linkKidsHeat">https://www.youtube.com/watch?v=kvAw2N2E_ZM</string>
+    <string name="event5descriptionK">Some days can get really really hot! You need to know that the sun could be very dangerous!\n
+        \n
+        Here\'s what to do:\n
+        - Drink as much water as possible!\n
+        - Eat fruits and vegetables!\n
+        - Wear light-coloured clothes and NEVER go out without a hat!\n
+        - Stay in shade if you are outside!\n
+        - Sunscreen is a must!\n
+    </string>
+
+    <string name="blizzardK">Winter storms</string>
+    <string name="linkKidsBlizzards">https://www.youtube.com/watch?v=BpBtRmTmbqQ</string>
+    <string name="event6descriptionK">
+        A blizzard is a winter storm that can be really dangerous. During a blizzard, it\'s snowy and windy, and it can be hard to see.
+        A lot of the time, blizzards are also really cold, even freezing. When it snows heavy, it\'s hard to get around.\n
+        \n
+        Tips for blizzards:\n
+        - Stay inside where it\'s warm and dry if you can.\n
+        - If you\'re outside during a blizzard, dress warmly and be sure to wear gloves and a jacket.\n
+        - Always wear a hat to keep your head warm too.\n
+        - Try to stay dry and wear a scarf that you can use to cover your mouth when you breathe.\n
+
+    </string>
+
+    <string name="wildfiresK">Wildfires</string>
+    <string name="linkKidsWildfires">https://www.youtube.com/watch?v=KrkUjc_CGMY</string>
+    <string name="event7descriptionK">
+        A wildfire also known as a wildland fire, forest fire or vegetation fire is an uncontrolled fire often occurring in wildland areas, but which can also consume houses.\n
+        Wildfires often begin unnoticed, but they spread quickly igniting brush, trees and homes.\n
+        \n
+        Here\'s what to do:\n
+        - Wear protective clothing, like sturdy shoes, long pants (denim, cotton or wool is best) and long-sleeved shirts and gloves.\n
+        - Stay indoors if possible and avoid the smoke!\n
+        - Listen to radio or TV.\n
+
+    </string>
+
+    <string name="hurricanesK">Hurricanes</string>
+    <string name="linkKidsHurricanes">https://www.youtube.com/watch?v=J2__Bk4dVS0</string>
+    <string name="event8descriptionK">
+        A hurricane is a huge storm! It can be up to 600 miles across and have strong winds spiraling inward and upward at speeds of 75 to 200 mph.\n
+        Hurricanes only form over really warm ocean water of 80°F or warmer. The atmosphere (the air) must cool off very quickly the higher you go.\n
+        The Atlantic hurricane season is from June 1 to November 30, but most hurricanes occur during the fall months. The Eastern Pacific hurricane season is from May 15 to November 30.\n
+        \n
+        - Stay away from low-lying and flood prone areas.\n
+        - Always stay indoors during a hurricane, because strong winds will blow things around.\n
+        - Leave mobile homes and to go to a shelter.\n
+        - If your home isn’t on higher ground, go to a shelter.\n
+    </string>
+
+
+    <string name="tutorialKids">A tornado destroyed Jack\'s house and now he has to rebuild it and he needs your help!\n\n
+        Check each natural disaster by tapping on "See tips", read everything, then tap the button "Watch video" to understand everything you need to know about disasters.\n
+        When you feel prepared to test your knowledge, tap on "Take a quiz", select a topic from the list and answer the questions.\n\n
+        Only one answer out of three is correct, make sure you choose an answer before the timer expires, or else you will lose one point.\n\n
+        </string>
+
+    <string name="tutorial2Kids">If you are not sure about the answer, tap on " Skip question " to move to the next question without risking to pick a wrong answer.\n
+        Stay focused ! For each wrong answer you will lose one point !\n
+        Hit the 100 score target by answering correctly so you can help Jack repair everything that the flood destroyed.\n
+        If you didn\'t hit the score target on the first try, you can always restart and complete the quizzes again.\n\n\n
+    Remember, being prepared always makes a difference!</string>
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="r_string_tutorialKids">R.string.tutorialKids</string>
+    <string name="title_activity_location">LocationActivity</string>
+
+</resources>

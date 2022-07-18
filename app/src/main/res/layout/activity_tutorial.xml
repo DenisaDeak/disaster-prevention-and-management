@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kids.Tutorial"
+    android:background="@color/orange"
+    >
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="disaster prevention\n&amp; management"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_below="@id/app_title"
+        android:id="@+id/cardviewTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/light_blue"
+        style="@style/Widget.Material3.CardView.Outlined"
+        app:strokeColor="@color/white"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideOverlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageTutorial"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/tutorialk"
+                android:scaleType="centerCrop"
+
+                />
+            <TextView
+                android:id="@+id/introTutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins"
+                android:gravity="start"
+                android:layout_gravity="center_vertical|end"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="15dp"
+                android:text="Tutorial"
+                android:textColor="@color/navy_blue"
+                android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/img1_tutorial"/>
+
+            <TextView
+                android:id="@+id/intro2Tutorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins"
+                android:gravity="start"
+                android:padding="15dp"
+                android:text="Tutorial"
+                android:textColor="@color/navy_blue"
+                android:layout_gravity="center_vertical|end"
+                android:textSize="15dp" />
+            </LinearLayout>
+            </ScrollView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTutorial"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardviewTutorial"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="@font/poppins"
+        android:text="Got it!"
+        android:textColor="@color/pink"
+        android:padding="13dp"
+        android:textSize="15dp"
+        app:strokeColor="@color/white" />
+</RelativeLayout>

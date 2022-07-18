@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.Material3.CardView.Elevated"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:background="@color/bright_orange">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/flood1"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/bright_orange"
+            android:fontFamily="@font/poppins"
+            android:textSize="17dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+        <ru.embersoft.expandabletextview.ExpandableTextView
+            android:id="@+id/descTextView"
+            android:fontFamily="@font/poppins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            app:etv_animationTime="20"
+            app:etv_expandLines="0"
+            app:etv_showLine="false"
+            app:etv_textContentSize="14sp"
+            app:etv_textExpand="See tips"
+            app:etv_textShrink="Got it!"
+            app:etv_textContentColor="@color/navy_blue"
+            app:etv_textStateColor="@color/gray"
+            android:textAppearance="?attr/textAppearanceBody2"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/videoView"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Watch video"
+            android:textColor="@color/light_gray"
+            android:layout_gravity="center"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:strokeColor="@color/bright_orange"
+            app:icon="@drawable/ic_play_arrow"
+            android:fontFamily="@font/poppins"
+            />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

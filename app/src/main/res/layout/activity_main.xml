@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coloured_background"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/menuIcon"
+        android:fontFamily="@font/poppins"
+        android:text="disaster prevention\n&amp; management"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/menuIcon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_menu"></ImageView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/kidsmodebutton"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/locationName"
+        android:backgroundTint="@color/bright_orange"
+        android:checked="true"
+        app:iconTint="@color/true_blue"
+        android:onClick="onClickKids"
+        android:text="KIDS zone"
+        android:textColor="@color/white"
+        android:textSize="6pt"
+        android:textStyle="bold"
+        app:icon="@drawable/ic__kids_mode"></com.google.android.material.button.MaterialButton>
+
+
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/location"
+        android:text="Location"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput_searchLocation"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:hint="Search location.."
+        android:textColorHint="@color/light_gray"
+        app:boxStrokeColor="@color/bright_orange"
+        app:counterTextColor="@color/light_gray"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="@color/bright_orange"
+        app:startIconDrawable="@drawable/ic_search"
+        app:startIconTint="@color/light_gray"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchLocation"
+            android:inputType="textCapWords|textAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/poppins"
+            android:maxLength="21"
+            android:textColor="@color/bright_orange"
+            android:textColorHint="@color/bright_orange"
+            android:textColorHighlight="@color/light_blue"
+            android:textSize="18dp"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/temperatureMain"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textinput_searchLocation"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/poppins"
+            android:text="-°C"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/weatherCondition" />
+
+        <TextView
+            android:id="@+id/weatherCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/poppins"
+            android:text="---"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/shareloc" />
+
+        <ImageView
+            android:id="@+id/weatherIcon"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/tornado"
+            app:layout_constraintBottom_toTopOf="@+id/shareloc"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/shareloc"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            app:contentPadding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/safety"
+            app:strokeColor="@color/light_blue"
+
+
+            tools:layout_editor_absoluteX="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="Share your location "
+                android:textColor="@color/white"
+                android:textSize="18sp">
+
+            </TextView>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/safety"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shareloc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            app:contentPadding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/travel"
+            app:strokeColor="@color/light_blue"
+            tools:layout_editor_absoluteX="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="Safety tips - be prepared for disasters!"
+                android:textColor="@color/white"
+                android:textSize="18sp">
+
+            </TextView>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/travel"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/safety"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="true"
+            app:contentPadding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="@color/light_blue"
+
+            tools:layout_editor_absoluteX="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="Travel plan - check weather &amp; disasters "
+                android:textColor="@color/white"
+                android:textSize="18sp">
+
+            </TextView>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

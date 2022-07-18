@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
+}
+
+android {
+    dataBinding{
+        enabled=true
+    }
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        applicationId "com.example.disasterpreventionmanagement"
+        minSdkVersion 24
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        buildConfigField "String", "WEATHER_KEY", "\"${properties.getProperty('WEATHER_KEY')}\""
+        buildConfigField "String", "WEATHERTRAVEL_KEY", "\"${properties.getProperty('WEATHERTRAVEL_KEY')}\""
+        buildConfigField "String", "GOOGLE_API_KEY", "\"${properties.getProperty('GOOGLE_API_KEY')}\""
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding= true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.fragment:fragment:1.4.1'
+    implementation 'androidx.navigation:navigation-fragment:2.4.1'
+    implementation 'androidx.navigation:navigation-ui:2.4.1'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation 'androidx.test.ext:junit:1.1.4-alpha06'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.material:material:1.7.0-alpha02'
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    implementation 'com.android.volley:volley:1.2.1' //for parsing JSON
+    implementation 'com.google.android.libraries.places:places:1.1.0'
+    implementation 'com.github.gifffert:ExpandableTextView:0.1.6' //expandable text view
+
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+}

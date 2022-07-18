@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".travel.TravelActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coloured_background"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/back"></ImageView>
+
+    <TextView
+        android:id="@+id/introTravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Preparing to move to a different area, planning a trip or just transiting a new location ?\nTap on your choice."
+        android:textColor="@color/white"
+        android:textSize="16dp"></TextView>
+
+    <com.google.android.material.card.MaterialCardView
+        app:strokeColor="@null"
+        android:layout_width="350dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:id="@+id/move"
+        android:clickable="true"
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardElevation="8dp"
+        android:background="@drawable/button3design"
+        android:layout_below="@+id/introTravel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="Staying for a while? Avoid disasters !"
+                android:textColor="@color/bright_orange"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+                android:textSize="16dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:textAlignment="textStart"
+                android:text="Check past &amp; ongoing disasters for any country in the world.Some areas are considered high-risk locations because of their history of repeating natural disastes. Consult our safety guides !  "
+                android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+                android:textColor="@color/navy_blue"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:drawableRight="@drawable/ic_arrow_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:paddingRight="10dp"
+                android:text="tap to start"
+                android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/house" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="50dp"
+        app:strokeColor="@null"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="200dp"
+        android:id="@+id/transit"
+        android:clickable="true"
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardElevation="8dp"
+        android:background="@drawable/button3design"
+        android:layout_below="@+id/move">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="Holiday plans? Check the weather !"
+            android:textColor="@color/bright_orange"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:textSize="16dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="10dp"
+            android:text="Check current weather conditions for up to five different locations
+anywhere in the world and save time while planning your next trip!\n"
+            android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+            android:textColor="@color/navy_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:drawableRight="@drawable/ic_arrow_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:paddingRight="10dp"
+                android:text="tap to start"
+                android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitEnd"
+                app:srcCompat="@drawable/luggage" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
+
